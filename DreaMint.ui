@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>313</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DreaMint Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(29, 37, 54);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="price_box_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Gill Sans MT&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Price of Crypto/Stock</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="asset_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>231</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Gill Sans MT&quot;;</string>
+    </property>
+    <property name="text">
+     <string># of Coins/Stock</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calc_asset_button">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: rgb(255, 255, 255);
+font: 20pt &quot;Gill Sans MT&quot;;
+border-color: rgb(106, 106, 106);
+border-width :3px;
+border-style:solid;
+background-color: rgb(0, 85, 127);
+
+}
+
+QPushButton:hover{
+	background-color: rgb(0, 106, 255);
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>GO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="profit_box">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25pt &quot;Gill Sans MT&quot;;
+border-color: rgb(255, 255, 255);
+border-width :2px;
+border-style:solid;
+background-color: rgb(31, 31, 31);
+color: rgb(255, 255, 255);
+border-color: rgb(66, 66, 66);</string>
+    </property>
+    <property name="text">
+     <string>$0.00</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="main_label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 28pt &quot;Gill Sans MT&quot;;</string>
+    </property>
+    <property name="text">
+     <string>DreaMint Calculator</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="version_label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>440</y>
+      <width>168</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 15pt &quot;Gill Sans MT&quot;;</string>
+    </property>
+    <property name="text">
+     <string>VERSION 1.0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="profit_label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;Gill Sans MT&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Profit</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="price_box">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25pt &quot;Gill Sans MT&quot;;
+border-color: rgb(255, 255, 255);
+border-width :2px;
+border-style:solid;
+background-color: rgb(31, 31, 31);
+color: rgb(255, 255, 255);
+border-color: rgb(66, 66, 66);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="asset_box">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>291</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 25pt &quot;Gill Sans MT&quot;;
+border-color: rgb(255, 255, 255);
+border-width :2px;
+border-style:solid;
+background-color: rgb(31, 31, 31);
+color: rgb(255, 255, 255);
+border-color: rgb(66, 66, 66);</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>0</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
